@@ -1,0 +1,12 @@
+n = len(a)
+
+for i in range(n):
+    count = 0
+    for j in range(n):
+        if a[i] == a[j]:
+            count += 1
+    
+    if count > n // 2:
+        print("Majority element is:", a[i])
+        break
+  return 0
