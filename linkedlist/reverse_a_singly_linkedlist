@@ -1,0 +1,31 @@
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
+def reverse_linked_list(head):
+    prev = None
+    curr = head
+    while curr is not None:
+        next_temp = curr.next   # remember next node
+        curr.next = prev        # reverse current node's pointer
+        prev = curr             # move prev to current
+        curr = next_temp        # move to next node
+    return prev  # prev is now the new head
+
+
+# Example: 1 -> 2 -> 3 -> 4
+head = ListNode(1)
+head.next = ListNode(2)
+head.next.next = ListNode(3)
+head.next.next.next = ListNode(4)
+
+new_head = reverse_linked_list(head)
+
+# Traverse and print manually (no built‑in list or join)
+curr = new_head
+while curr is not None:
+    print(curr.val, end=" ")
+    curr = curr.next
+# Output: 4 3 2 1
