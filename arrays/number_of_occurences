@@ -1,0 +1,13 @@
+arr=[]
+n=int(input("enter n value: "))
+for i in range(n):
+    m=int(input("enter values:"))
+    arr.append(m)
+    t=int(input("target value:"))
+print("array: ",arr)
+count=0
+for i in range(n):
+    if arr[i]==t:
+        count+=1
+print("occurence of target value is: ",count)
+
