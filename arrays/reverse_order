@@ -1,0 +1,15 @@
+arr=[]
+n=int(input("enter n value: "))
+for i in range(n):
+    v=int(input("enter values: "))
+    arr.append(v)
+print("arrays: ",arr)
+for i in range(n):
+    left = 0
+right = n - 1
+
+while left < right:
+    arr[left], arr[right] = arr[right], arr[left]
+    left = left + 1
+    right = right - 1
+print("reverse order is: ",arr)
