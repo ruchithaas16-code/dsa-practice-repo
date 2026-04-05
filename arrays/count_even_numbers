@@ -1,0 +1,11 @@
+arr=[]
+n=int(input("enter n value:\n"))
+for i in range(n):
+  val=int(input("enter values:\n"))
+  arr.append(val)
+print("array is:",arr)
+count=0
+for i in range(n):
+  if a[i]%2==0:
+    count=+1
+print("number of even numbers is: ",count)
