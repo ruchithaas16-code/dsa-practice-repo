@@ -1,1 +1,12 @@
-arr
+arr=[]
+n=int(input("enter n value:\n"))
+for i in range(n):
+  val=int(input("enter values:\n"))
+  arr.append(val)
+print("array is:",arr)
+key=int(input("enter value to be searched: "))
+for i in range(n-1):
+  if a[i]==key:
+    print("found")
+  else:
+    print("not found")
