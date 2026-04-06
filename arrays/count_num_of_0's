@@ -1,0 +1,11 @@
+arr=[]
+n=int(input("enter n value: ",))
+for i in range(n):
+  val=int(input("enter values: "))
+  arr.append(val)
+print("array is: ",arr)
+for i in range(n-1):
+  count=0
+  if a[i]==0:
+    count=+1
+print("total number of 0's are: ",count)
