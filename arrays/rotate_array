@@ -1,0 +1,9 @@
+def rotate_right(arr, k):
+    n = len(arr)
+    if n == 0:
+        return arr
+    k %= n
+    return arr[-k:] + arr[:-k]
+
+arr = [1, 2, 3, 4, 5]
+print(rotate_right(arr, 2))  # [4, 5, 1, 2, 3]
