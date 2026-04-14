@@ -1,0 +1,25 @@
+class Node:
+    def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
+        self.val = int(x)
+        self.next = next
+        self.random = random
+
+def copyRandomList(head: 'Node') -> 'Node':
+    if not head:
+        return None
+    original_to_copy = {}
+    dummy = Node(0)
+    tail = dummy
+    curr = head
+    while curr:
+        new_node = Node(curr.val)
+        tail.next = new_node
+        tail = tail.next
+        original_to_copy[curr] = new_node
+        curr = curr.next
+    curr = head
+    while curr:
+        if curr.random:
+            original_to_copy[curr].random = original_to_copy[curr.random]
+        curr = curr.next
+    return dummy.next
