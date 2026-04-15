@@ -1,0 +1,13 @@
+arr = [4, 7, 2, 9, 5, 8, 3]  # Example array
+i = 0
+odd_count = 0
+
+print("Odd numbers: ", end="")
+while i < 7:  # Manual size (n=7)
+    if arr[i] % 2 != 0:
+        print(arr[i], end=" ")
+        odd_count = odd_count + 1
+    i = i + 1
+
+print()  # New line
+print("Total odd numbers:", odd_count)
