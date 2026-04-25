@@ -1,0 +1,6 @@
+def count_matching_chars(s1, s2):
+    set1 = set(s1)
+    set2 = set(s2)
+    return len(set1 & set2)
+
+print(count_matching_chars("hello", "world"))  # 3 (l, o, h)
