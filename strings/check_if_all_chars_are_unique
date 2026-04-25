@@ -1,0 +1,5 @@
+def all_unique(s):
+    return len(s) == len(set(s))
+
+print(all_unique("abcdef"))   # True
+print(all_unique("hello"))    # False
