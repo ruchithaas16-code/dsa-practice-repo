@@ -1,0 +1,4 @@
+def count_chars(s):
+    return len(s)
+
+print(count_chars("hello world"))  # 11
