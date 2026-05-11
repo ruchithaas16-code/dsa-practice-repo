@@ -1,0 +1,8 @@
+def starts_with(s, prefix):
+    return s.startswith(prefix)
+
+def ends_with(s, suffix):
+    return s.endswith(suffix)
+
+print(starts_with("hello", "he"))  # True
+print(ends_with("hello", "lo"))    # True
